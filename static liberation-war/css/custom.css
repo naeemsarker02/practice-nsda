@@ -1,0 +1,158 @@
+:root {
+  --color-green: #0b3d2e;
+  --color-green-dark: #082c21;
+  --color-maroon: #7a1f2b;
+  --color-cream: #f7f4ee;
+  --color-text: #2b2a27;
+  --color-muted: #6b6a66;
+  --color-gold: #a9853c;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: "Merriweather", "Georgia", serif;
+}
+
+a {
+  color: var(--color-green);
+}
+
+a:hover {
+  color: var(--color-maroon);
+}
+
+.navbar-archive {
+  background-color: var(--color-green);
+}
+
+.navbar-archive .navbar-brand,
+.navbar-archive .nav-link {
+  color: var(--color-cream);
+}
+
+.navbar-archive .nav-link.active {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.navbar-archive .nav-link:hover {
+  color: var(--color-gold);
+}
+
+.footer-archive {
+  background-color: var(--color-green-dark);
+  color: var(--color-cream);
+  padding: 2.5rem 0 1.5rem;
+}
+
+.footer-archive a {
+  color: var(--color-cream);
+}
+
+.footer-archive a:hover {
+  color: var(--color-gold);
+}
+
+.footer-archive hr {
+  border-color: rgba(247, 244, 238, 0.2);
+}
+
+.section-heading {
+  color: var(--color-green);
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.btn-archive {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+  color: var(--color-cream);
+}
+
+.btn-archive:hover {
+  background-color: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+  color: var(--color-cream);
+}
+
+.btn-outline-archive {
+  background-color: transparent;
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.btn-outline-archive:hover {
+  background-color: var(--color-green);
+  color: var(--color-cream);
+}
+
+.card-archive {
+  border: 1px solid rgba(11, 61, 46, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero-archive {
+  background-color: var(--color-green);
+  color: var(--color-cream);
+  padding: 4rem 0;
+}
+
+.hero-archive p {
+  color: rgba(247, 244, 238, 0.9);
+}
+
+.hero-cover {
+  position: relative;
+  background-image: url("../assets/images/gallery/events1-7march-speech.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 44, 33, 0.82);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-credit {
+  color: rgba(247, 244, 238, 0.6);
+}
+
+.icon-archive {
+  color: var(--color-green);
+}
+
+.gallery-thumb {
+  cursor: pointer;
+  border: 1px solid rgba(11, 61, 46, 0.15);
+}
+
+.gallery-modal-img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-modal-img.zoomed {
+  transform: scale(1.6);
+}
+
+.gallery-modal-wrap {
+  overflow: hidden;
+  text-align: center;
+}

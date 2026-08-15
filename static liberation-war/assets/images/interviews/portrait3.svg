@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#0b3d2e"/>
+  <circle cx="150" cy="120" r="55" fill="#f7f4ee"/>
+  <path d="M60 260 Q150 180 240 260 Z" fill="#f7f4ee"/>
+  <text x="150" y="290" font-family="Georgia, serif" font-size="14" fill="#a9853c" text-anchor="middle">Journalist</text>
+</svg>

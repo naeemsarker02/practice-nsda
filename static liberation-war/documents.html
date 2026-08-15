@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents | Liberation War Archive</title>
+  <meta name="description" content="Browse treaties, declarations, and official correspondence from Bangladesh's 1971 Liberation War, filterable by document type.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark navbar-archive navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Liberation War Archive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
+          <li class="nav-item"><a class="nav-link" href="interviews.html">Interviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="section-heading">Documents</h1>
+    <p>This section of the archive holds treaties, declarations, and official correspondence from the 1971 Liberation War. Each entry can be filtered by type and opened for a full description along with its publication date and source information.</p>
+
+    <div class="btn-group mb-4" id="documentFilterGroup" role="group" aria-label="Document type filter">
+      <button type="button" class="btn btn-archive" data-category="all">All</button>
+      <button type="button" class="btn btn-outline-archive" data-category="treaty">Treaty</button>
+      <button type="button" class="btn btn-outline-archive" data-category="declaration">Declaration</button>
+      <button type="button" class="btn btn-outline-archive" data-category="correspondence">Correspondence</button>
+    </div>
+
+    <div class="row g-4" id="documentGrid">
+
+      <div class="col-md-4 document-item" data-category="treaty">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/treaty-instrument-of-surrender.jpg" class="card-img-top" alt="Photograph of the Instrument of Surrender signing, 16 December 1971">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Treaty</span>
+            <h3 class="h5 card-title">Instrument of Surrender</h3>
+            <p class="card-text">Dated 16 December 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc1">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="treaty">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/treaty-generic.svg" class="card-img-top" alt="Simla Agreement document">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Treaty</span>
+            <h3 class="h5 card-title">Simla Agreement</h3>
+            <p class="card-text">Dated 2 July 1972</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc2">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="declaration">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/declaration-7march-speech.jpg" class="card-img-top" alt="Photograph of the 7 March 1971 speech at Ramna Race Course, Dhaka">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Declaration</span>
+            <h3 class="h5 card-title">Proclamation of Independence</h3>
+            <p class="card-text">Dated 10 April 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc3">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="declaration">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/declaration-7march-speech.jpg" class="card-img-top" alt="Photograph of the 7 March 1971 speech at Ramna Race Course, Dhaka">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Declaration</span>
+            <h3 class="h5 card-title">Radio Declaration of Independence</h3>
+            <p class="card-text">Dated 26 March 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc4">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="correspondence">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/correspondence.svg" class="card-img-top" alt="Telegram to the United Nations document">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">Correspondence</span>
+            <h3 class="h5 card-title">Telegram to the United Nations</h3>
+            <p class="card-text">Dated April 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc5">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="correspondence">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/correspondence.svg" class="card-img-top" alt="Diplomatic cable document">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">Correspondence</span>
+            <h3 class="h5 card-title">Diplomatic Cable from Dhaka</h3>
+            <p class="card-text">Dated 6 April 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc6">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 document-item" data-category="declaration">
+        <div class="card card-archive h-100">
+          <img src="assets/images/documents/zia-portrait.jpg" class="card-img-top" alt="Portrait of Major Ziaur Rahman">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Declaration</span>
+            <h3 class="h5 card-title">Kalurghat Radio Declaration</h3>
+            <p class="card-text">Dated 27 March 1971</p>
+            <button type="button" class="btn btn-outline-archive" data-bs-toggle="modal" data-bs-target="#doc7">View Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="doc1" tabindex="-1" aria-labelledby="doc1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc1Label">Instrument of Surrender</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The Instrument of Surrender was signed on 16 December 1971 at the Racecourse Ground in Dhaka, marking the formal surrender of Pakistani forces to the Allied Forces of the Mitro Bahini, made up of the Bangladesh Liberation Forces and the Indian Armed Forces. The signing brought an end to the nine-month war and is commemorated in Bangladesh as Victory Day.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>16 December 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>Bangladesh National Archives. Photograph: Government of India, released under the Government Open Data License &ndash; India (GODL), via Wikimedia Commons.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc2" tabindex="-1" aria-labelledby="doc2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc2Label">Simla Agreement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The Simla Agreement was a peace treaty signed between India and Pakistan following the 1971 war. It set out the principles that would govern future relations between the two countries, including the Line of Control in Kashmir, and formed part of the broader diplomatic resolution that followed Bangladesh's independence.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>2 July 1972</td></tr>
+              <tr><th scope="row">Source Information</th><td>Ministry of External Affairs, India</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc3" tabindex="-1" aria-labelledby="doc3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc3Label">Proclamation of Independence</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The Proclamation of Independence was adopted by the Mujibnagar Government, formally establishing the legal and constitutional basis for Bangladesh's independence. It retroactively recognized the declaration made on 26 March 1971 and established the framework for the provisional government during the war.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>10 April 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>Mujibnagar Government Records. Photograph: Press Information Department, Government of Bangladesh (public domain), via Wikimedia Commons.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc4" tabindex="-1" aria-labelledby="doc4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc4Label">Radio Declaration of Independence</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>In the early hours of 26 March 1971, a declaration of independence was transmitted by radio from Chittagong, informing the nation and the world that Bangladesh had declared itself independent following the crackdown that began the previous night. This broadcast is regarded as the first formal announcement of independence.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>26 March 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>Independent Bangladesh Radio Archives. Photograph: Press Information Department, Government of Bangladesh (public domain), via Wikimedia Commons.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc5" tabindex="-1" aria-labelledby="doc5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc5Label">Telegram to the United Nations</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>During the early months of the war, the Provisional Government of Bangladesh sent telegrams to the United Nations Secretary-General and to foreign governments, appealing for international recognition and humanitarian assistance for the millions of refugees crossing into India.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>April 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>United Nations Archives</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc6" tabindex="-1" aria-labelledby="doc6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc6Label">Diplomatic Cable from Dhaka</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>In early April 1971, diplomatic staff based in Dhaka sent cables to their home government describing the unfolding violence and expressing dissent over the official response to the crisis. These cables are now studied as important firsthand diplomatic records of the period.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>6 April 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>Foreign Ministry Archival Records</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc7" tabindex="-1" aria-labelledby="doc7Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="doc7Label">Kalurghat Radio Declaration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>On 27 March 1971, Major Ziaur Rahman of the Bengal Regiment broadcast a declaration of independence over the Swadhin Bangla Betar Kendra radio station at Kalurghat, near Chittagong, on behalf of Sheikh Mujibur Rahman. The broadcast, made as regional resistance was organizing after the crackdown of 25 March, was rebroadcast over the following days and helped spread news of the resistance across the region and internationally.</p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr><th scope="row">Publication Date</th><td>27 March 1971</td></tr>
+              <tr><th scope="row">Source Information</th><td>Swadhin Bangla Betar Kendra broadcast records. Portrait: Nationaal Archief / Spaarnestad Photo, CC BY-SA 3.0 NL, via Wikimedia Commons.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-archive">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Liberation War Archive</h5>
+          <p>Preserving the documents, testimonies, and images of Bangladesh's 1971 Liberation War for future generations.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="contact.html" class="me-3"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; <span id="year"></span> Liberation War Archive. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/document-filter.js"></script>
+</body>
+</html>

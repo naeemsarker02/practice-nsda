@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#f7f4ee"/>
+  <rect x="10" y="10" width="380" height="240" fill="none" stroke="#a9853c" stroke-width="3"/>
+  <text x="200" y="120" font-family="Georgia, serif" font-size="20" fill="#0b3d2e" text-anchor="middle">Diplomatic Correspondence</text>
+  <text x="200" y="150" font-family="Georgia, serif" font-size="14" fill="#7a1f2b" text-anchor="middle">Correspondence Document</text>
+  <line x1="60" y1="180" x2="340" y2="180" stroke="#0b3d2e" stroke-width="1"/>
+</svg>
